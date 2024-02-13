@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background-color:blue">progressive bar</h1>
+<button>25%</button>
+<button>50%</button>
+<button>75%</button>
+<button>100%</button>
+
+
+   <script>
+ var a=document.getElementsByTagName("button")
+a[0].addEventListener("click",hello1)
+a[1].addEventListener("click",hello2)
+a[2].addEventListener("click",hello3)
+a[3].addEventListener("click",hello4)
+
+var b=document.createElement("div")
+
+function hello1(){
+    document.body.appendChild(b)
+   b.style.width="25%"
+   b.style.height="30px"
+   b.style.backgroundColor="blue"
+
+}
+function hello2(){
+    document.body.appendChild(b)
+    b.style.width="50%"
+    b.style.height="30px"
+    b.style.backgroundColor="yellow"
+
+}
+
+function hello3(){
+    document.body.appendChild(b)
+    b.style.width="75%"
+    b.style.height="30px"
+    b.style.backgroundColor="grey"
+}
+
+function hello4(){
+    document.body.appendChild(b)
+    b.style.width="100%"
+    b.style.height="30px"
+    b.style.backgroundColor="black"
+}
+</script>
+
+
+ 
+</body>
+</html>
